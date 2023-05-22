@@ -19,6 +19,13 @@ extension BuildContextExtension on BuildContext {
 
   Color get primaryColor => Theme.of(this).primaryColor;
 
+  /// I'm using GetX for state management, that's why I can access textTheme
+  /// by getX but when you use another state management, then you need to
+  /// uncomment it to access textTheme by context
+  // TextTheme get textTheme => Theme.of(this).textTheme;
+
+  bool get isDark => Theme.of(this).brightness == Brightness.dark;
+
   TextStyle get buttonTextStyle =>
       Theme.of(this).textTheme.titleMedium!.copyWith(
             fontWeight: FontWeight.bold,
@@ -30,6 +37,4 @@ extension BuildContextExtension on BuildContext {
         fontWeight: FontWeight.bold,
         color: Theme.of(this).primaryColor,
       );
-
-  bool get isDark => Theme.of(this).brightness == Brightness.dark;
 }
