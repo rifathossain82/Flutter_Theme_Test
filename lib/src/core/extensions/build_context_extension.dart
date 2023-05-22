@@ -17,6 +17,8 @@ extension BuildContextExtension on BuildContext {
 
   double get maxScreenSize => max(MediaQuery.of(this).size.height, MediaQuery.of(this).size.width);
 
+  Color get primaryColor => Theme.of(this).primaryColor;
+
   TextStyle get buttonTextStyle =>
       Theme.of(this).textTheme.titleMedium!.copyWith(
             fontWeight: FontWeight.bold,
@@ -26,7 +28,7 @@ extension BuildContextExtension on BuildContext {
   TextStyle get outlinedButtonTextStyle =>
       Theme.of(this).textTheme.titleMedium!.copyWith(
         fontWeight: FontWeight.bold,
-        color: kPrimarySwatchColor,
+        color: Theme.of(this).primaryColor,
       );
 
   bool get isDark => Theme.of(this).brightness == Brightness.dark;

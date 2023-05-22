@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_theme_test/src/core/extensions/build_context_extension.dart';
-import 'package:flutter_theme_test/src/core/utils/color.dart';
 
 class KOutlinedButton extends StatelessWidget {
   const KOutlinedButton({
@@ -27,7 +26,9 @@ class KOutlinedButton extends StatelessWidget {
     return MaterialButton(
       onPressed: onPressed,
       shape: RoundedRectangleBorder(
-        side: BorderSide(color: borderColor ?? kPrimarySwatchColor),
+        side: BorderSide(
+          color: borderColor ?? context.primaryColor,
+        ),
         borderRadius: BorderRadius.circular(borderRadius ?? 5),
       ),
       color: bgColor,

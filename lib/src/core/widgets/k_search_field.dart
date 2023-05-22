@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_theme_test/src/core/utils/color.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class KSearchField extends StatelessWidget {
   const KSearchField({

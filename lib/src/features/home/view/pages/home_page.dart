@@ -53,6 +53,8 @@ class _HomepageState extends State<Homepage> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+
+                  /// text widgets
                   Text(
                     'Hello World!',
                     style: context.textTheme.titleLarge,
@@ -63,6 +65,8 @@ class _HomepageState extends State<Homepage> {
                       color: context.isDark ? kWhite : kDeepOrange,
                     ),
                   ),
+
+                  /// button widgets
                   KButton(
                     onPressed: () {},
                     child: Text(
@@ -79,6 +83,8 @@ class _HomepageState extends State<Homepage> {
                     ),
                   ),
                   const SizedBox(height: 15),
+
+                  /// text form widgets
                   KTextFormFiled(
                     controller: nameController,
                     labelText: 'Name',
@@ -91,6 +97,8 @@ class _HomepageState extends State<Homepage> {
                     hintText: 'Type name to search',
                   ),
                   const SizedBox(height: 15),
+
+                  /// checkbox list tile widgets
                   CheckboxListTile(
                     value: isAgree,
                     onChanged: (value) {
@@ -106,6 +114,8 @@ class _HomepageState extends State<Homepage> {
                     contentPadding: EdgeInsets.zero,
                   ),
                   const SizedBox(height: 15),
+
+                  /// radio list tile widgets
                   RadioListTile(
                     value: ThemeMode.light,
                     groupValue: selectedThemeMode,
@@ -140,6 +150,8 @@ class _HomepageState extends State<Homepage> {
                     contentPadding: EdgeInsets.zero,
                   ),
                   const SizedBox(height: 15),
+
+                  /// card widget
                   Card(
                     child: Container(
                       height: 120,
@@ -149,6 +161,8 @@ class _HomepageState extends State<Homepage> {
                     ),
                   ),
                   const SizedBox(height: 15),
+
+                  /// container widget
                   Container(
                     height: 120,
                     width: context.screenWidth,
@@ -165,6 +179,8 @@ class _HomepageState extends State<Homepage> {
                     ),
                   ),
                   const SizedBox(height: 15),
+
+                  /// list tile widgets
                   ListTile(
                     onTap: (){},
                     title: const Text('Rifat Hossain'),
@@ -177,6 +193,8 @@ class _HomepageState extends State<Homepage> {
                     contentPadding: EdgeInsets.zero,
                   ),
                   const SizedBox(height: 15),
+
+                  /// icons widgets
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: const [
