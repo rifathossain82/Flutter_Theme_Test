@@ -1,16 +1,2 @@
-# flutter_theme_test
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Google Pixel 3 Screenshot 0](https://github.com/rifathossain82/Flutter_Theme_Test/assets/88751768/57318e22-a4e5-4119-a462-1551b2e70f00)
+![Google Pixel 3 Screenshot 1](https://github.com/rifathossain82/Flutter_Theme_Test/assets/88751768/9ed83d4b-a9bb-4f1e-893d-94abe5d69196)
